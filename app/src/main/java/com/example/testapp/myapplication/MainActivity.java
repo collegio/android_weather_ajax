@@ -159,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     weatherText.setText("Your current weather is " + response.getJSONArray("weather").getJSONObject(0).getString("main"));
                 } catch (JSONException e) {
-                    Log.d("Lng", "piss");
                     e.printStackTrace();
                 }
             }
